@@ -1,0 +1,104 @@
+
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 2fr 30fr 30fr 2fr;
+            grid-template-areas: "header header header header"
+                                 "main main sidebar sidebar"
+                                 "contents contents sidebar sidebar"
+                                 "footer footer footer footer";
+            gap: 10px;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+        .container2{
+            display: grid;
+            height: 45vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "content1 content2";
+            gap: 5px;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        header, main, #sidebar, #content1, #content2, footer, .container2{
+            border: 2px solid rgb(139, 137, 137);
+            border-radius: 12px;
+            padding: 5px;
+        }
+        header{
+            background-color: rgb(214, 220, 221);
+            grid-area: header;
+            font-size: 40px;
+            color: rgb(18, 96, 116);
+            text-shadow: 2px 2px 5px rgb(114, 112, 112);
+            
+            
+        }
+        main{
+            background-color: rgb(191, 243, 226);
+            grid-area: main;
+            text-indent: 50px;
+            line-height: 2;
+            letter-spacing: 2px;
+            font-size: 14px;
+            
+        }
+        #sidebar{
+            background-color: rgb(241, 217, 247);
+            grid-area: sidebar;
+            align-content: flex-start;
+            font-size: 14px;
+            line-height: 2;
+
+        }
+        #contents{
+            grid-area: contents;
+            background-color: rgb(233, 234, 243);
+            
+        }
+        #content1{
+            background-color: rgb(169, 174, 197);
+            grid-area: content1;
+            font-size: 14px;
+            
+        }
+
+        #content2{
+            background-color: rgb(173, 166, 212);
+            grid-area: content2;
+            font-size: 14px;
+            
+        }
+        footer{
+            background-color: rgb(202, 202, 202);
+            grid-area: footer;
+            font-size: 12px;
+            
+        }
+        img {
+            width: 50%;
+            height: auto;
+            float: left;
+  }
+
+        @media only screen and (max-width: 600px) {
+            .container{
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 10fr 20fr 10fr 2fr;
+                grid-template-areas: "header"
+                                     "main"
+                                     "sidebar"
+                                     "contents"
+                                     "footer"
+                                     ;
+            }
+        }
+        input, textarea {
+            width: 95%;
+        }
+        
