@@ -1,0 +1,75 @@
+a:link {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration:none;
+    }
+    a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:hover {
+    color: grey;
+    background-color: transparent;  
+    text-decoration: underline;
+    }
+    a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header {
+      background-color: rgb(240, 182, 75);
+      padding: 30px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+    
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+    
+    /* Style the navigation menu */
+    nav {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: rgb(216, 88, 88);
+      padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      color: azure;
+      font-size: large;
+      padding: 0;
+    }
+    
+    /* Style the content */
+    article {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: rgb(199, 99, 5);
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
